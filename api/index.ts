@@ -32,5 +32,4 @@ async function launchApp() {
     });
 }
 
-
 void launchApp();
