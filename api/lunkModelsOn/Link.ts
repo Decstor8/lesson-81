@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 const Schema = mongoose.Schema;
 
-const LinksSchema = new Schema({
+const mainShema = new Schema({
   shortUrl: {
     type: String,
     required: true,
@@ -12,6 +12,6 @@ const LinksSchema = new Schema({
   },
 });
 
-const Link = mongoose.model('Link', LinksSchema);
+const Link = mongoose.model('Link', mainShema);
 
 export default Link;

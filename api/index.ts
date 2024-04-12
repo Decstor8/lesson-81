@@ -25,9 +25,7 @@ async function launchApp() {
     });
 
     process.on('SIGTERM', async () => {
-        console.log("Server is shutting down...");
         await mongoose.disconnect();
-        console.log("MongoDB disconnected.");
         process.exit(0);
     });
 }
